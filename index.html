@@ -1,16 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chris Kramer</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/style/style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+
+  <body>
+    <!-- visual intro that users will see once they go to homepage -->
     <header id="intro">
-        <a href="#" class="btn-secondary">Join the Journey...</a>
+      <a href="#about" class="btn-secondary">Join the Journey...</a>
     </header>
-    
-</body>
+    <main>
+      <!-- about section that introduces myself to users -->
+      <section id="about">
+        <img src="./assets/images/IMG_0042.JPG" id="mainPhoto" />
+        <h1>Chris Kramer</h1>
+        <h3>Full-Stack Software Engineer</h3>
+        <div class="row" id="firstRow">
+          <div class="col-3">
+            <h4>Curiosity</h4>
+            <p>
+              Coding has always been so intriguing. How can something be
+              connected to every business in the world? It must be super
+              exclusive that only geniuses can get into!
+            </p>
+          </div>
+          <div class="col-3 offset-1">
+            <h4>Beginning Steps</h4>
+            <p>
+              Not exactly. It is an industry that never ceases to stop growing,
+              a continuously changing environment. As soon as I got a taste of
+              <strong>"Hello, World!"</strong>, my curiosity has been
+              unsatisfied.
+            </p>
+          </div>
+          <div class="col-3 offset-1">
+            <h4>The Future</h4>
+            <p>
+              I love to network and expand my experience and knowledge. Connect
+              with me on the Contact Page or browse my resume.
+            </p>
+            <a href="./assets/docs/Resume V1.pdf"
+              ><img src="./assets/images/resume.PNG" id="resume"
+            /></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- project section that showcases my projects to the user -->
+      <section id="projects">
+        <h1>Projects</h1>
+        <h2>Individual Projects</h2>
+        <div class="row">
+          <div class="col-4 offset-1">
+            <h4>Password Generator</h5>
+            <p>
+              An automated password generator that includes capitals, lowercase,
+              numbers, and symbols.
+            </p>
+            <p>Language: JavaScript</p>
+            <img src="./assets/images/passwordGen.JPG" class="projScreenShot">
+            <a href="https://github.com/ChrisKramer15/password-generator"><img src="./assets/images/github.PNG" class="github"/></a>
+            <a href="https://ChrisKramer15.github.io/password-generator"><img src="./assets/images/demo.JPG" class="github" /></a>
+          </div>
+          <div class="col-4 offset-1">
+            <h4>Day Planner</h5>
+            <p>
+                Day scheduler for planning out your day.  Saves to Local Storage and displays color coded times depending on time of day.
+            </p>
+            <p>Language: JavaScript, Moment.js (JS library)</p>
+            <img src="./assets/images/dayPlanner.JPG" class="projScreenShot">
+            <a href="https://github.com/ChrisKramer15/day-planner"><img src="./assets/images/github.PNG" class="github"/></a>
+            <a href="https://ChrisKramer15.github.io/day-planner"><img src="./assets/images/demo.JPG" class="github" /></a>
+          </div>
+        </div>
+        <h2>Collaborative Projects</h2>
+        <div class="row">
+            <div class="col-4 offset-1">
+              <h4>Inside Outside</h5>
+              <p>
+                An application collaboratively designed to decide what to do during a lockdown.  Go outside, or stay in grab a drink!
+              </p>
+              <p>Language: JavaScript, Ajax (front-end api requests)</p>
+              <img src="./assets/images/insideOutside.JPG" class="projScreenShot">
+              <a href="https://github.com/ChrisKramer15/inside-or-outside"><img src="./assets/images/github.PNG" class="github"/></a>
+              <a href="https://ChrisKramer15.github.io/inside-or-outside"><img src="./assets/images/demo.JPG" class="github" /></a>
+            </div>
+            <div class="col-4 offset-1">
+              <h4>Que KC</h5>
+              <p>
+                  A collaboratively designed React application for finding your favorite BBQ places in the area. (UNDER CONSTRUCTION)
+              </p>
+              <p>Language: Reactjs, MongoDB, PassportJS (authentication) </p>
+              <img src="./assets/images/QUEKC.JPG" class="projScreenShot">
+              <a href="https://github.com/ChrisKramer15/Que-KC"><img src="./assets/images/github.PNG" class="github"/></a>
+              <a href="https://que-kc.herokuapp.com/"><img src="./assets/images/demo.JPG" class="github" /></a>
+            </div>
+          </div>
+  
+      </section>
+
+      <!-- contact section that will enable users to contact me in multiple ways -->
+      <section id="contact"></section>
+    </main>
+  </body>
 </html>
