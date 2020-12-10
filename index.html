@@ -1,39 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chris Kramer</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/style/style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
 
+  <body>
     <!-- visual intro that users will see once they go to homepage -->
     <header id="intro">
-        <a href="#about" class="btn-secondary">Join the Journey...</a>
+      <a href="#about" class="btn-secondary">Join the Journey...</a>
     </header>
     <main>
+      <!-- about section that introduces myself to users -->
+      <section id="about">
+        <img src="./assets/images/IMG_0042.JPG" id="mainPhoto" />
+        <h1>Chris Kramer</h1>
+        <h3>Full-Stack Software Engineer</h3>
+        <div class="row">
+          <div class="col-3">
+            <h4>Curiosity</h4>
+            <p>
+              Coding has always been so intriguing. How can something be
+              connected to every business in the world? It must be super
+              exclusive that only geniuses can get into!
+            </p>
+          </div>
+          <div class="col-3 offset-1">
+            <h4>Beginning Steps</h4>
+            <p>
+              Not exactly. It is an industry that never ceases to stop growing,
+              a continuously changing environment. As soon as I got a taste of
+              <strong>"Hello, World!"</strong>, my curiosity has been
+              unsatisfied.
+            </p>
+          </div>
+          <div class="col-3 offset-1">
+            <h4>The Future</h4>
+            <p>
+              I love to network and expand my experience and knowledge. Connect
+              with me on the Contact Page or browse my resume.
+            </p>
+            <a href="./assets/docs/Resume V1.pdf"
+              ><img src="./assets/images/resume.PNG" id="resume"
+            /></a>
+          </div>
+        </div>
+      </section>
 
-        <!-- about section that introduces myself to users -->
-        <section id="about">
-            <img src="./assets/images/IMG_0042.JPG">
-            <h1>Chris Kramer</h1>
-            <h3>Full-Stack Software Engineer</h3>
-            <p>Coding has always been so intriguing.  How can something be connected to every business in the world?  It must be super exclusive that only geniuses can get into!</p>
-            <p>Not exactly.  It is an industry that never ceases to stop growing, a continuously changing environment.  As soon as I got a taste of "Hello, World!", my curiosity has been unsatisfied.</p>
-            <p>From military to warehouse managerial experience, I have been challenged in various levels.  Tech is where I want to be, and I cannot wait for the challenges to come forth.  I do enjoy to watch challenges fall apart due to my own drive.</p>
-        </section>
+      <!-- project section that showcases my projects to the user -->
+      <section id="projects"></section>
 
-        <!-- project section that showcases my projects to the user -->
-        <section id="projects">
-
-        </section>
-
-        <!-- contact section that will enable users to contact me in multiple ways -->
-        <section id="contact">
-
-        </section>
+      <!-- contact section that will enable users to contact me in multiple ways -->
+      <section id="contact"></section>
     </main>
-</body>
+  </body>
 </html>
