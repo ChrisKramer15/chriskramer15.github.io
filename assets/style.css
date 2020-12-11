@@ -101,5 +101,23 @@ h4 {
 }
 
 #contactRow {
-  padding-bottom: 40em;
+  padding-bottom: 18em;
+}
+
+#contactImg {
+  height: 40%;
+  width: 50%;
+  margin-top: 10%;
+}
+
+#contact h5 {
+  background-color: grey;
+  border-radius: 90%;
+  color: #111b40;
+  margin-top: 20%;
+}
+
+#contact h5:hover {
+  color: white;
+  text-shadow: 3px 3px #111b40;
 }
