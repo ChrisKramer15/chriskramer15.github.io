@@ -4,13 +4,17 @@ let aboutSection = document.querySelector("#about");
 
 navBar.addEventListener("click", () => {
     let newNav = document.createElement("nav");
-    let newUl = document.createElement("ul");
-    let newLi1 = document.createElement("li");
-    let newLi2 = document.createElement("li");
+    let unorderedList = document.createElement("ul");
+    let homeLi = document.createElement("li");
+    let aboutLi = document.createElement("li");
+    let projLi = document.createElement("li");
+    let contactLi = document.createElement("li");
     aboutSection.prepend(newNav);
-    newLi1.textContent = "Home";
-    newLi2.textContent = "About";
-    newNav.prepend(newUl);
-    newUl.append(newLi1);
-    newUl.append(newLi2);
+    newNav.prepend(unorderedList);
+    unorderedList.append(homeLi, aboutLi, projLi, contactLi);
+    homeLi.textContent = "Home";
+    aboutLi.textContent = "About";
+    projLi.textContent = "Projects";
+    contactLi.textContent = "Contacts";
 });
+

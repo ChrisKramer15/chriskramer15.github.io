@@ -29,6 +29,12 @@ h4 {
   color: gray;
 }
 
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
 /* class focused styling */
 .col-3 {
   background-color: black;
