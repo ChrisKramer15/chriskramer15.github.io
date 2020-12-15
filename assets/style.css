@@ -29,10 +29,15 @@ h4 {
   color: gray;
 }
 
-ul {
+nav ul {
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  background-color: #111b40;
+  padding: 0.5em;
 }
 
 /* class focused styling */
@@ -51,6 +56,22 @@ ul {
 .github {
   height: 10%;
   width: 35%;
+}
+
+.btn-secondary {
+  margin-bottom: 5%;
+  font-weight: bold;
+  border-radius: 10px;
+  border-color: white;
+  border-style: ridge;
+  padding: 0.3em;
+  color: #55f0f4;
+}
+
+.btn-secondary:hover {
+  background: white;
+  color: orange;
+  border-color: #55f0f4;
 }
 
 /*id focused styling */
@@ -75,22 +96,6 @@ ul {
   align-items: center;
   text-align: center;
   padding: 0 5%;
-}
-
-#intro a {
-  margin-bottom: 5%;
-  font-weight: bold;
-  border-radius: 10px;
-  border-color: white;
-  border-style: ridge;
-  padding: 0.3em;
-  color: #55f0f4;
-}
-
-#intro a:hover {
-  background: white;
-  color: orange;
-  border-color: #55f0f4;
 }
 
 #about {
@@ -126,4 +131,8 @@ ul {
 #contact h5:hover {
   color: white;
   text-shadow: 3px 3px #111b40;
+}
+
+#beginBtn {
+  width: 15%;
 }
