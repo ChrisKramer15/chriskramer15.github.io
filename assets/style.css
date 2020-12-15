@@ -30,7 +30,7 @@ h4 {
 }
 
 nav ul {
-  display: flex;
+  display: none;
   justify-content: space-evenly;
   list-style-type: none;
   position: fixed;
@@ -56,6 +56,10 @@ nav ul {
 .github {
   height: 10%;
   width: 35%;
+}
+
+.show {
+  display: flex;
 }
 
 .btn-secondary {
