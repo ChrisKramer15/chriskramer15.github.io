@@ -40,6 +40,10 @@ nav ul {
   padding: 0.5em;
 }
 
+ul {
+  opacity: 50%;
+}
+
 /* class focused styling */
 .col-3 {
   background-color: black;
