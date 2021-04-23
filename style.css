@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+.container {
+  width: 20%;
+  border-style: ridge;
+  border-color: chartreuse;
+  border-width: 0.25em;
+  height: 100vh;
+}
+
+#sideImg {
+  height: 10em;
+  width: 10em;
+  border-radius: 100%;
+}
