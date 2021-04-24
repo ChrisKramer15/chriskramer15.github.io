@@ -4,63 +4,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap reference -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
+    <!-- font awesome reference-->
+    <script
+      src="https://kit.fontawesome.com/830c575bb5.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" type="text/css" href="./style.css" />
-    <title>Document</title>
+    <title>Chris Kramer</title>
   </head>
+
   <body>
     <!-- container for sidebar, contains navigation as  well as footer -->
-    <div class="wrapper col-3">
+    <div class="wrapper col-2">
       <sidebar id="sideNav">
-        <img
-          id="sideImg"
-          src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg"
-        />
+        <img id="sideImg" src="./assets/IMG_0042.JPG" />
         <h1>Chris Kramer</h1>
         <div id="socialLinks">
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
+          <button><i class="fab fa-facebook"></i></button>
+          <button><i class="far fa-envelope"></i></button>
+          <button><i class="fab fa-linkedin"></i></button>
         </div>
         <nav>
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
         <footer>
-          <p>Copyright 2021</p>
+          <p>&#169;2021 - Kramer Technologies</p>
         </footer>
       </sidebar>
     </div>
 
     <!-- home section, this is what user will see automatically when going to website -->
     <section id="home">
-      <div class="col-9">
-        <h2>Chris Kramer</h2>
-      </div>
+      <div class="col-10"></div>
     </section>
     <section id="about">
-      <div class="col-9">
+      <div class="col-10">
         <h2>About</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, esse?
-          Magni laborum saepe mollitia inventore cumque praesentium laudantium,
-          quo qui repellendus illum, ex fugit eveniet, esse explicabo tempore
-          soluta quia.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
+          molestiae dicta maiores autem velit unde nisi optio ipsum facilis,
+          dolor, laborum eos quod aperiam, culpa repellat officia cumque
+          quisquam rerum.
         </p>
         <div class="row">
           <div class="col-6">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg"
+              src="./assets/aleksandra-wantuch-ZqKYkwSfsJQ-unsplash (1).jpg"
             />
           </div>
           <div class="col-6">
@@ -74,5 +76,11 @@
         </div>
       </div>
     </section>
+    <section id="resume">
+      <div class="col-10">
+        <h2>Resume</h2>
+      </div>
+    </section>
+    <script src="./script.js"></script>
   </body>
 </html>

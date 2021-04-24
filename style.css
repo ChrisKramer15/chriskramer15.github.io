@@ -1,32 +1,55 @@
+/* main element styling */
 body {
   margin: 0;
-  background-color: #63ba7b;
 }
 
 h2 {
   margin: 0;
 }
 
+ul {
+  margin-top: 4em;
+}
+
+li {
+  margin: 2em;
+  display: block;
+}
+
+footer {
+  margin-top: 2em;
+}
+
+/* class elements styling */
 .wrapper {
   margin: 0;
-  border-style: ridge;
-  border-color: chartreuse;
-  border-width: 0.25em;
   height: 100vh;
   position: fixed;
   right: 0%;
   background-color: white;
 }
 
+/* id elements styling */
 #sideImg {
-  height: 10em;
   width: 10em;
   border-radius: 100%;
+  border-style: ridge;
+  margin-top: 2.5em;
+}
+
+#sideNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#socialLinks button {
+  margin: 0 1em;
 }
 
 #home {
   display: flex;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg");
+  background-image: url("./assets/safar-safarov-LKsHwgzyk7c-unsplash.jpg");
   height: 100vh;
   background-size: cover;
 }
