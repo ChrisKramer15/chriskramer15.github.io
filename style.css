@@ -1,0 +1,79 @@
+/* main element styling */
+body {
+  margin: 0;
+  background-color: #1d2426;
+  color: #e7efe9;
+}
+
+h1 {
+  color: #e7efe9;
+}
+
+h2 {
+  margin: 0;
+}
+
+ul {
+  margin-top: 4em;
+}
+
+li {
+  margin: 2em;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #e7efe9;
+}
+
+a:active,
+a:hover {
+  color: #43a765;
+}
+footer {
+  margin-top: 2em;
+}
+
+/* class elements styling */
+.wrapper {
+  margin: 0;
+  height: 100vh;
+  position: fixed;
+  right: 0%;
+  background-color: #6c7e73;
+}
+
+/* id elements styling */
+#sideImg {
+  width: 10em;
+  border-radius: 100%;
+  border-style: double;
+  border-width: 0.2em;
+  margin-top: 2.5em;
+}
+
+#sideNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#socialLinks button {
+  margin: 0 0.5em;
+  border-radius: 100%;
+  border-style: double;
+  border-width: 0.2em;
+  background-color: #43a765;
+}
+
+i {
+  color: #e7efe9;
+}
+
+#home {
+  display: flex;
+  background-image: url("./assets/maksym-zakharyak-6VBRu8jR8to-unsplash.jpg");
+  height: 100vh;
+  background-size: cover;
+}
