@@ -1,12 +1,12 @@
 /* main element styling */
 body {
   margin: 0;
-  background-color: #1d2426;
-  color: #e7efe9;
+  background-color: #1f2429;
+  color: #e7cec6;
 }
 
 h1 {
-  color: #e7efe9;
+  color: #1f2429;
 }
 
 h2 {
@@ -24,15 +24,25 @@ li {
 
 a {
   text-decoration: none;
-  color: #e7efe9;
+  color: #1f2429;
 }
 
-a:active,
-a:hover {
-  color: #43a765;
+ul a:active,
+ul a:hover {
+  color: #319fb1;
+  background-color: #e7cec6;
+  border-radius: 15%;
+  padding: 0.25em;
+  text-decoration: underline;
+  font-weight: bold;
 }
 footer {
   margin-top: 2em;
+  color: #1f2429;
+}
+
+i {
+  color: #1f2429;
 }
 
 /* class elements styling */
@@ -41,7 +51,7 @@ footer {
   height: 100vh;
   position: fixed;
   right: 0%;
-  background-color: #6c7e73;
+  background-color: #72b4c7;
 }
 
 /* id elements styling */
@@ -49,8 +59,9 @@ footer {
   width: 10em;
   border-radius: 100%;
   border-style: double;
-  border-width: 0.2em;
   margin-top: 2.5em;
+  border-color: #1f2429;
+  border-width: 0.25em;
 }
 
 #sideNav {
@@ -63,12 +74,9 @@ footer {
   margin: 0 0.5em;
   border-radius: 100%;
   border-style: double;
-  border-width: 0.2em;
-  background-color: #43a765;
-}
-
-i {
-  color: #e7efe9;
+  background-color: #319fb1;
+  border-color: #1f2429;
+  border-width: 0.25em;
 }
 
 #home {
