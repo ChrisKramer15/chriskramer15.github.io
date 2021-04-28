@@ -11,6 +11,10 @@ h1 {
 
 h2 {
   margin: 0;
+  color: #31999b;
+  font-size: 2.5em;
+  text-align: center;
+  padding-bottom: 2em;
 }
 
 ul {
@@ -29,10 +33,7 @@ a {
 
 ul a:active,
 ul a:hover {
-  color: #319fb1;
-  background-color: #e7cec6;
-  border-radius: 15%;
-  padding: 0.25em;
+  color: #e7cec6;
   text-decoration: underline;
   font-weight: bold;
 }
@@ -43,6 +44,15 @@ footer {
 
 i {
   color: #1f2429;
+}
+
+nav i {
+  padding-right: 2em;
+}
+
+i:active,
+i:hover {
+  color: #e7cec6;
 }
 
 /* class elements styling */
@@ -84,4 +94,46 @@ i {
   background-image: url("./assets/maksym-zakharyak-6VBRu8jR8to-unsplash.jpg");
   height: 100vh;
   background-size: cover;
+  background-attachment: fixed;
+}
+
+#aboutGithub a {
+  font-weight: normal;
+  color: #e7cec6;
+}
+
+#aboutImg {
+  height: 20em;
+}
+
+#about h2 {
+  padding-top: 2em;
+}
+
+#about h3 {
+  padding-bottom: 1em;
+}
+
+#about p {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+#aboutImg {
+  margin-top: 5em;
+  border-radius: 10%;
+  border-color: black;
+  box-shadow: 2px 4px 20px 0px #31999b;
+}
+
+#about li {
+  padding: 1em;
+}
+
+#resume {
+  margin-top: 9em;
+}
+
+#resume p {
+  padding: 3em;
 }
