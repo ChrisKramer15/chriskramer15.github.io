@@ -196,3 +196,25 @@ i:hover {
 #resume a:hover {
   color: #e7cec6;
 }
+
+#projects .card {
+  background-color: #72b4c7;
+}
+
+#projects .card-title {
+  color: #1f2429;
+  font-weight: bold;
+}
+
+#projects .card-body {
+  display: table;
+}
+
+#projects button {
+  width: 40%;
+  margin: 0 0.5em;
+}
+
+#projects i {
+  padding-right: 0.5em;
+}
