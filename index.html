@@ -287,6 +287,24 @@
     <section id="contact">
       <div class="col-10">
         <h2>Contact</h2>
+        <!-- contact map using google api -->
+        <div class="row">
+          <div class="col-7">
+            <div id="map"></div>
+            <script
+              defer
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbs_szD91Qs1Ry435HiAjPFOIdKApu1e0&callback=initMap"
+            ></script>
+          </div>
+          <div class="col-5">
+            <container id="contactInfo">
+              <img src="./assets/kramerdev.JPG" />
+              <h3>Chris Kramer</h3>
+              <p>Grain Valley, MO 64029</p>
+              <p>816-389-0601</p>
+            </container>
+          </div>
+        </div>
       </div>
     </section>
     <script src="./script.js"></script>

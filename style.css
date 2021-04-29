@@ -251,3 +251,31 @@ i:active {
 #hypeBtn {
   width: 100% !important;
 }
+
+/* map practiccee */
+/* Set the size of the div element that contains the map */
+#map {
+  height: 30em;
+  /* The height is 400 pixels */
+  width: 40em;
+  /* The width is the width of the web page */
+  margin: 2em;
+}
+
+#contactInfo img {
+  height: 40%;
+  width: 70%;
+  border-radius: 50%;
+  padding-left: 1em;
+}
+
+#contactInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#contact .col-5 {
+  display: flex;
+}
