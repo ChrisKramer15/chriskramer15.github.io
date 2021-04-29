@@ -11,7 +11,7 @@ h1 {
 
 h2 {
   margin: 0;
-  color: #31999b;
+  color: #31899b;
   font-size: 2.5em;
   text-align: center;
   padding-bottom: 2em;
@@ -50,6 +50,23 @@ nav i {
   padding-right: 2em;
 }
 
+h5 {
+  text-align: center;
+  padding-bottom: 1em;
+  font-size: 1.5em;
+  color: #319fb1;
+}
+
+h6 {
+  font-size: 1em;
+  color: #31899b;
+  font-weight: bold;
+}
+
+h7 {
+  font-weight: bold;
+}
+
 i:active,
 i:hover {
   color: #e7cec6;
@@ -62,6 +79,23 @@ i:hover {
   position: fixed;
   right: 0%;
   background-color: #72b4c7;
+}
+
+.download {
+  padding-bottom: 3.25em;
+}
+
+.card {
+  background-color: #e7cec6;
+  color: #1f2429;
+  margin-bottom: 3em;
+  box-shadow: 2px 4px 20px 0px #31899b;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* id elements styling */
@@ -112,6 +146,9 @@ i:hover {
 
 #about h3 {
   padding-bottom: 1em;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2em;
 }
 
 #about p {
@@ -123,7 +160,12 @@ i:hover {
   margin-top: 5em;
   border-radius: 10%;
   border-color: black;
-  box-shadow: 2px 4px 20px 0px #31999b;
+  box-shadow: 2px 4px 20px 0px #31899b;
+}
+
+#about strong {
+  text-decoration: underline;
+  color: #72b4c7;
 }
 
 #about li {
@@ -135,5 +177,22 @@ i:hover {
 }
 
 #resume p {
-  padding: 3em;
+  padding: 1.5em;
+}
+
+#resume i {
+  padding-right: 1em;
+}
+
+#resume button {
+  text-align: center;
+  margin-top: 0.4em;
+  height: 3em;
+  border-radius: 10%;
+  background-color: #31899b;
+  font-weight: bold;
+}
+
+#resume a:hover {
+  color: #e7cec6;
 }
