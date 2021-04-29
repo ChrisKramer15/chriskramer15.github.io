@@ -199,6 +199,7 @@ i:hover {
 
 #projects .card {
   background-color: #72b4c7;
+  margin-bottom: 10em;
 }
 
 #projects .card-title {
@@ -207,14 +208,46 @@ i:hover {
 }
 
 #projects .card-body {
-  display: table;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#projects img {
+  height: 8em;
+  width: 100%;
+  overflow: hidden;
 }
 
 #projects button {
   width: 40%;
   margin: 0 0.5em;
+  background-color: #1f2429;
+  border-color: #31899b;
+  border-width: 0.25em;
+  border-radius: 5%;
+}
+
+#projects a {
+  color: #e7cec6;
+}
+
+#projects a:hover,
+a:active {
+  color: #319fb1;
 }
 
 #projects i {
   padding-right: 0.5em;
+  color: #e7cec6;
+}
+
+#projects i:hover,
+i:active {
+  color: #31899b;
+}
+
+#hypeBtn {
+  width: 100% !important;
 }
