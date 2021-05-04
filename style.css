@@ -289,7 +289,7 @@ i:active {
 }
 
 /* responsive design */
-.toggle-button {
+/* .toggle-button {
   position: absolute;
   top: 0.75rem;
   left: 35rem;
@@ -305,10 +305,10 @@ i:active {
   width: 100%;
   background-color: white;
   border-radius: 10px;
-}
+} */
 
 /* 1400 breakpoint responsive */
-@media (max-width: 1455px) {
+/* @media (max-width: 1455px) {
   li {
     margin: 0;
   }
@@ -325,6 +325,13 @@ i:active {
     width: 85%;
   }
 
+  .row {
+    flex-wrap: nowrap;
+  }
+
+  .col-6 {
+    width: 100%;
+  }
   #sideNav h1 {
     display: none;
   }
@@ -338,6 +345,15 @@ i:active {
     flex-direction: column;
   }
 
+  #contactInfo img {
+    width: 50%;
+  }
+
+  #map {
+    height: 15em;
+    width: 20em;
+  }
+
   #aboutImg {
     height: 10em;
     margin-left: 5em;
@@ -347,24 +363,15 @@ i:active {
     padding-top: 1em;
   }
 
-  .col-6 {
-    width: 100%;
-  }
-
   #mobHeader {
     display: flex;
     justify-content: center;
     color: #31899b;
     font-size: 3em;
   }
-
-  .row {
-    flex-wrap: nowrap;
-  }
 }
-
-/* xs screen sizes */
-@media (max-width: 400px) {
+/* 750 breakpoint */
+/*@media (max-width: 750px) {
   nav ul {
     flex-direction: column;
     width: 100%;
@@ -385,25 +392,26 @@ i:active {
   }
 
   #home {
-    /* display: none; */
-    height: 65vh;
+    display: none;
+    height: 70vh;
     background-size: contain;
-    width: 100vh;
+    width: 160vh;
   }
 
-  /* #mobHeader {
+   #mobHeader {
     display: flex;
     justify-content: center;
     color: #31899b;
     font-size: 3em;
-  } */
+  }
 
-  .wrapper.active {
+   .wrapper.active {
     display: flex;
   }
 
   .toggle-button {
     display: flex;
+    left: 55rem;
   }
 
   .wrapper {
@@ -411,6 +419,6 @@ i:active {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 40vh;
+    height: 30vh;
   }
-}
+}  */
