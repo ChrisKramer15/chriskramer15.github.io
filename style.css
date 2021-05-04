@@ -214,9 +214,9 @@ i:hover {
   flex-wrap: wrap;
 }
 
-#mobHeader {
+/* #mobHeader {
   display: none;
-}
+} */
 
 #projects img {
   height: 8em;
@@ -284,9 +284,38 @@ i:active {
   display: flex;
 }
 
-#mobResume {
-  display: none;
+/* mobile responsiveness -- X-Large and above */
+/* mobile responsiveness -- large */
+@media only screen and (max-width: 1200px) {
+  .wrapper {
+    background-color: green;
+  }
 }
+
+/* mobile responsiveness -- medium */
+@media only screen and (max-width: 992px) {
+  .wrapper {
+    background-color: darkblue;
+  }
+}
+
+/* mobile responsiveness -- small */
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    background-color: purple;
+  }
+}
+
+/* mobile responsiveness -- X-Small and below */
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    background-color: red;
+  }
+}
+
+/* #mobResume {
+  display: none;
+} */
 
 /* responsive design */
 /* .toggle-button {
