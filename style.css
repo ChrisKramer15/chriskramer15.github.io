@@ -214,6 +214,10 @@ i:hover {
   flex-wrap: wrap;
 }
 
+#mobHeader {
+  display: none;
+}
+
 #projects img {
   height: 8em;
   width: 100%;
@@ -280,6 +284,10 @@ i:active {
   display: flex;
 }
 
+#mobResume {
+  display: none;
+}
+
 /* responsive design */
 .toggle-button {
   position: absolute;
@@ -299,23 +307,72 @@ i:active {
   border-radius: 10px;
 }
 
-@media (max-width: 400px) {
-  .toggle-button {
-    display: flex;
+/* 1400 breakpoint responsive */
+@media (max-width: 1455px) {
+  li {
+    margin: 0;
+  }
+
+  footer {
+    display: none;
   }
 
   .wrapper {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 40vh;
+    height: 75vh;
   }
 
+  .container {
+    width: 85%;
+  }
+
+  #sideNav h1 {
+    display: none;
+  }
+
+  #resume .row {
+    display: none;
+  }
+
+  #mobResume {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #aboutImg {
+    height: 10em;
+    margin-left: 5em;
+  }
+
+  #socialLinks {
+    padding-top: 1em;
+  }
+
+  .col-6 {
+    width: 100%;
+  }
+
+  #mobHeader {
+    display: flex;
+    justify-content: center;
+    color: #31899b;
+    font-size: 3em;
+  }
+
+  .row {
+    flex-wrap: nowrap;
+  }
+}
+
+/* xs screen sizes */
+@media (max-width: 400px) {
   nav ul {
     flex-direction: column;
     width: 100%;
     margin-top: 0;
+  }
+
+  body {
+    width: 100vh;
   }
 
   #sideNav img {
@@ -331,9 +388,29 @@ i:active {
     /* display: none; */
     height: 65vh;
     background-size: contain;
+    width: 100vh;
   }
+
+  /* #mobHeader {
+    display: flex;
+    justify-content: center;
+    color: #31899b;
+    font-size: 3em;
+  } */
 
   .wrapper.active {
     display: flex;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .wrapper {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
   }
 }
