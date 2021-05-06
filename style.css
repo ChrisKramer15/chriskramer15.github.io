@@ -344,7 +344,6 @@ i:active {
 
 @media only screen and (max-width: 1600px) {
   body {
-    background-color: red;
     margin-left: 0.25em;
   }
 }
@@ -362,7 +361,7 @@ i:active {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 21vh;
+    height: 15em;
   }
 
   nav ul {
@@ -384,8 +383,7 @@ i:active {
 
   #home {
     /* display: none; */
-    height: 45vh;
-    background-size: contain;
+    background-size: cover;
   }
 
   .wrapper.active {
@@ -405,10 +403,6 @@ i:active {
   .toggle-button .bar {
     background-color: purple;
   }
-  #home {
-    height: 35vh;
-    background-size: contain;
-  }
 }
 
 /* mobile responsiveness -- X-Small and below */
@@ -416,9 +410,13 @@ i:active {
   .toggle-button .bar {
     background-color: red;
   }
-  #home {
-    height: 25vh;
-    background-repeat: no-repeat;
+
+  .wrapper {
+    height: 18em;
+  }
+
+  #navBtn {
+    display: flex;
   }
 }
 
