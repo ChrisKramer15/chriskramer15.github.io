@@ -82,7 +82,7 @@
     <!-- about section -->
     <section id="about">
       <div class="col-10">
-        <h1 id="mobHeader">Chris Kramer</h1>
+        <h2 id="mobHeader">Chris Kramer</h2>
         <h2>About</h2>
         <div class="row">
           <div class="col-7 offset-1">
@@ -128,7 +128,7 @@
       </div>
     </section>
     <section id="resume">
-      <div class="col-10">
+      <div class="col-xl-10 col-lg-12">
         <h2>Resume</h2>
         <div class="row">
           <div class="col-5 offset-1">
@@ -146,7 +146,7 @@
                 </p>
               </div>
             </div>
-            <div class="card">
+            <div class="card" id="educateCard">
               <div class="card-body">
                 <h5 class="card-title">Education Background</h5>
                 <h6>University of Kansas</h6>
@@ -165,7 +165,7 @@
                 </p>
               </div>
             </div>
-            <div class="card">
+            <div class="card" id="resumeCard">
               <div class="card-body download">
                 <h5 class="card-title">Download Resume</h5>
                 <button>
@@ -229,10 +229,13 @@
       </div>
     </section>
     <section id="projects">
-      <div class="col-10">
+      <div class="col-xl-10 col-12">
         <h2>PROJECTS</h2>
         <div class="row" id="projRow">
-          <div class="card col-3 offset-1" style="width: 18rem">
+          <div
+            class="card col-xl-3 offset-xl-1 col-4 offset-0"
+            style="width: 18rem"
+          >
             <img src="./assets/insideOutside.JPG" class="card-img-top" />
             <div class="card-body">
               <h5 class="card-title">Inside-Or-Outside</h5>
@@ -251,7 +254,7 @@
               </button>
             </div>
           </div>
-          <div class="card col-3" style="width: 18rem">
+          <div class="card col-xl-3 col-4" style="width: 18rem">
             <img src="./assets/hypeLogo.JPG" class="card-img-top" />
             <div class="card-body">
               <h5 class="card-title">HYPE Math</h5>
@@ -265,7 +268,7 @@
               </button>
             </div>
           </div>
-          <div class="card col-3" style="width: 18rem">
+          <div class="card col-xl-3 col-4" style="width: 18rem">
             <img src="./assets/flashDash.JPG" class="card-img-top" />
             <div class="card-body">
               <h5 class="card-title">Flash-Dash</h5>
@@ -292,7 +295,7 @@
         <h2>Contact</h2>
         <!-- contact map using google api -->
         <div class="row">
-          <div class="col-7">
+          <div class="col-7" id="mapDiv">
             <div id="map"></div>
             <script
               defer

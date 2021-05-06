@@ -100,7 +100,6 @@ i:hover {
 .card-body {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 /* id elements styling */
@@ -137,7 +136,7 @@ i:hover {
 }
 
 #rightCard {
-  height: 80em;
+  height: 70em;
   width: 100%;
 }
 
@@ -213,9 +212,8 @@ i:hover {
 
 #projects .card-body {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: colum;
+  justify-content: stretch;
 }
 
 /* #mobHeader {
@@ -251,6 +249,12 @@ a:active {
   color: #e7cec6;
 }
 
+#projRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 #projects i:hover,
 i:active {
   color: #31899b;
@@ -272,7 +276,7 @@ i:active {
 
 #contactInfo img {
   height: 40%;
-  width: 70%;
+  width: 20em;
   border-radius: 50%;
   padding-left: 1em;
 }
@@ -286,6 +290,8 @@ i:active {
 
 #contact .col-5 {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .toggle-button {
@@ -299,11 +305,48 @@ i:active {
   height: 21px;
 }
 
+#mapDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
 .toggle-button .bar {
   height: 3px;
   width: 100%;
   background-color: white;
   border-radius: 10px;
+}
+
+#resumeCard {
+  display: flex;
+  height: 17.5em;
+  flex-direction: row;
+  align-items: center;
+}
+
+#educateCard {
+  display: flex;
+  height: 28.2em;
+}
+
+#summaryCard {
+  display: flex;
+  height: 18.2em;
+}
+
+#resumeCard .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1600px) {
+  body {
+    background-color: red;
+    margin-left: 0.25em;
+  }
 }
 
 /* mobile responsiveness -- large */
@@ -341,7 +384,7 @@ i:active {
 
   #home {
     /* display: none; */
-    height: 55vh;
+    height: 45vh;
     background-size: contain;
   }
 
@@ -362,12 +405,20 @@ i:active {
   .toggle-button .bar {
     background-color: purple;
   }
+  #home {
+    height: 35vh;
+    background-size: contain;
+  }
 }
 
 /* mobile responsiveness -- X-Small and below */
 @media only screen and (max-width: 600px) {
   .toggle-button .bar {
     background-color: red;
+  }
+  #home {
+    height: 25vh;
+    background-repeat: no-repeat;
   }
 }
 
