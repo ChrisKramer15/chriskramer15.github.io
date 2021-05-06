@@ -102,27 +102,23 @@
               >.
             </p>
             <div class="row">
-              <ul class="col-6">
-                <li>
-                  <strong>Birthday: </strong>
-                  <span>March 27, 1988</span>
-                </li>
-                <li>
-                  <strong>Hometown: </strong>
-                  <span>Kansas City, Missouri</span>
-                </li>
-              </ul>
-              <ul class="col-6">
-                <li>
-                  <strong>Github: </strong>
-                  <span id="aboutGithub"
-                    ><a href="https://www.github.io/ChrisKramer15"
-                      >Github.io/ChrisKramer15</a
-                    ></span
-                  >
-                </li>
-                <li><strong>Phone: </strong> <span> 816-389-0601 </span></li>
-              </ul>
+              <li>
+                <strong>Birthday: </strong>
+                <span>March 27, 1988</span>
+              </li>
+              <li>
+                <strong>Hometown: </strong>
+                <span>Kansas City, Missouri</span>
+              </li>
+              <li>
+                <strong>Github: </strong>
+                <span id="aboutGithub"
+                  ><a href="https://www.github.io/ChrisKramer15"
+                    >Github.io/ChrisKramer15</a
+                  ></span
+                >
+              </li>
+              <li><strong>Phone: </strong> <span> 816-389-0601 </span></li>
             </div>
           </div>
           <div class="col-3">
@@ -136,7 +132,7 @@
         <h2>Resume</h2>
         <div class="row">
           <div class="col-5 offset-1">
-            <div class="card">
+            <div class="card" id="summaryCard">
               <div class="card-body">
                 <h5 class="card-title">Summary</h5>
                 <h6>Chris Kramer</h6>
@@ -181,7 +177,7 @@
             </div>
           </div>
           <div class="col-5">
-            <div class="card">
+            <div class="card" id="rightCard">
               <div class="card-body">
                 <h5 class="card-title">Professional Experience</h5>
                 <h6>HYPE Math</h6>
@@ -235,7 +231,7 @@
     <section id="projects">
       <div class="col-10">
         <h2>PROJECTS</h2>
-        <div class="row col-xl-12 col-lg-4" id="projRow">
+        <div class="row" id="projRow">
           <div class="card col-3 offset-1" style="width: 18rem">
             <img src="./assets/insideOutside.JPG" class="card-img-top" />
             <div class="card-body">
@@ -255,7 +251,7 @@
               </button>
             </div>
           </div>
-          <div class="card col-3 offset-1" style="width: 18rem">
+          <div class="card col-3" style="width: 18rem">
             <img src="./assets/hypeLogo.JPG" class="card-img-top" />
             <div class="card-body">
               <h5 class="card-title">HYPE Math</h5>
@@ -269,7 +265,7 @@
               </button>
             </div>
           </div>
-          <div class="card col-3 offset-1" style="width: 18rem">
+          <div class="card col-3" style="width: 18rem">
             <img src="./assets/flashDash.JPG" class="card-img-top" />
             <div class="card-body">
               <h5 class="card-title">Flash-Dash</h5>
@@ -296,7 +292,7 @@
         <h2>Contact</h2>
         <!-- contact map using google api -->
         <div class="row">
-          <div class="col-xl-7 col-lg-5 col-md-5 col-sm-5">
+          <div class="col-7">
             <div id="map"></div>
             <script
               defer

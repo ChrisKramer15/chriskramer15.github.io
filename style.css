@@ -18,7 +18,7 @@ h2 {
 }
 
 ul {
-  margin-top: 4em;
+  padding-left: 0.5rem;
 }
 
 li {
@@ -38,8 +38,9 @@ ul a:hover {
   font-weight: bold;
 }
 footer {
-  margin-top: 2em;
+  margin: 0 10em 0 10em;
   color: #1f2429;
+  text-align: center;
 }
 
 i {
@@ -79,6 +80,10 @@ i:hover {
   position: fixed;
   right: 0%;
   background-color: #72b4c7;
+}
+
+.wrapper h1 {
+  font-size: 1.5em;
 }
 
 .download {
@@ -131,17 +136,19 @@ i:hover {
   background-attachment: fixed;
 }
 
+#rightCard {
+  height: 80em;
+  width: 100%;
+}
+
 #aboutGithub a {
   font-weight: normal;
   color: #e7cec6;
 }
 
 #aboutImg {
-  height: 20em;
-}
-
-#about h2 {
-  padding-top: 2em;
+  height: 15em;
+  margin-left: 2.5em;
 }
 
 #about h3 {
@@ -170,10 +177,7 @@ i:hover {
 
 #about li {
   padding: 1em;
-}
-
-#resume {
-  margin-top: 9em;
+  text-align: center;
 }
 
 #resume p {
@@ -259,9 +263,9 @@ i:active {
 /* map practiccee */
 /* Set the size of the div element that contains the map */
 #map {
-  height: 30em;
+  height: 25em;
   /* The height is 400 pixels */
-  width: 40em;
+  width: 35em;
   /* The width is the width of the web page */
   margin: 2em;
 }
@@ -284,31 +288,85 @@ i:active {
   display: flex;
 }
 
-/* mobile responsiveness -- X-Large and above */
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
 /* mobile responsiveness -- large */
 @media only screen and (max-width: 1200px) {
-  .wrapper {
+  .toggle-button .bar {
     background-color: green;
+  }
+  .toggle-button {
+    display: flex;
+  }
+  .wrapper {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 21vh;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0;
+    align-items: flex-start;
+  }
+
+  #sideNav img {
+    display: none;
+  }
+
+  #sideNav li {
+    margin: 0;
+    text-align: center;
+  }
+
+  #home {
+    /* display: none; */
+    height: 55vh;
+    background-size: contain;
+  }
+
+  .wrapper.active {
+    display: flex;
   }
 }
 
 /* mobile responsiveness -- medium */
 @media only screen and (max-width: 992px) {
-  .wrapper {
-    background-color: darkblue;
+  .toggle-button .bar {
+    background-color: blue;
   }
 }
 
 /* mobile responsiveness -- small */
 @media only screen and (max-width: 768px) {
-  .wrapper {
+  .toggle-button .bar {
     background-color: purple;
   }
 }
 
 /* mobile responsiveness -- X-Small and below */
 @media only screen and (max-width: 600px) {
-  .wrapper {
+  .toggle-button .bar {
     background-color: red;
   }
 }
@@ -321,12 +379,12 @@ i:active {
 /* .toggle-button {
   position: absolute;
   top: 0.75rem;
-  left: 35rem;
-  display: none;
+  right: 1rem;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
-  height: 20px;
+  height: 21px;
 }
 
 .toggle-button .bar {
@@ -392,12 +450,6 @@ i:active {
     padding-top: 1em;
   }
 
-  #mobHeader {
-    display: flex;
-    justify-content: center;
-    color: #31899b;
-    font-size: 3em;
-  }
 }
 /* 750 breakpoint */
 /*@media (max-width: 750px) {
