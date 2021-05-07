@@ -367,6 +367,7 @@ i:active {
   width: 10em;
   border: none;
   background-color: #e7cec6 !important;
+  display: none;
 }
 @media only screen and (max-width: 1550px) {
   body {
