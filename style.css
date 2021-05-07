@@ -136,7 +136,7 @@ i:hover {
 }
 
 #rightCard {
-  height: 70em;
+  height: 62.5em;
   width: 100%;
 }
 
@@ -155,6 +155,10 @@ i:hover {
   text-align: center;
   text-decoration: underline;
   font-size: 2em;
+}
+
+section #about {
+  padding-bottom: 15em;
 }
 
 #about p {
@@ -212,13 +216,13 @@ i:hover {
 
 #projects .card-body {
   display: flex;
-  flex-direction: colum;
-  justify-content: stretch;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* #mobHeader {
+#mobHeader {
   display: none;
-} */
+}
 
 #projects img {
   height: 8em;
@@ -233,6 +237,10 @@ i:hover {
   border-color: #31899b;
   border-width: 0.25em;
   border-radius: 5%;
+}
+
+#projects {
+  padding-bottom: 16em;
 }
 
 #projects a {
@@ -320,7 +328,7 @@ i:active {
 
 #resumeCard {
   display: flex;
-  height: 17.5em;
+  height: 10em;
   flex-direction: row;
   align-items: center;
 }
@@ -335,27 +343,42 @@ i:active {
   height: 18.2em;
 }
 
+#summaryCard li,
+#rightCard li {
+  display: list-item;
+  padding: 0;
+  margin: 0 0 1em 0;
+}
+
+#summaryCard p,
+#rightCard p {
+  padding: 0;
+}
+
 #resumeCard .card-body {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
   align-items: center;
 }
-
-@media only screen and (max-width: 1600px) {
+.learnMore {
+  height: 2em;
+  width: 10em;
+  border: none;
+  background-color: #e7cec6 !important;
+}
+@media only screen and (max-width: 1550px) {
   body {
     margin-left: 0.25em;
+  }
+
+  #educateCard {
+    height: 30em;
   }
 }
 
 /* mobile responsiveness -- large */
 @media only screen and (max-width: 1200px) {
-  .toggle-button .bar {
-    background-color: green;
-  }
-  .toggle-button {
-    display: flex;
-  }
   .wrapper {
     display: none;
     flex-direction: column;
@@ -363,7 +386,13 @@ i:active {
     width: 100%;
     height: 15em;
   }
-
+  .toggle-button .bar {
+    background-color: green;
+  }
+  .toggle-button {
+    display: flex;
+    position: fixed;
+  }
   nav ul {
     display: flex;
     flex-direction: column;
@@ -389,6 +418,20 @@ i:active {
   .wrapper.active {
     display: flex;
   }
+
+  #about h2,
+  #resume h2,
+  #projects h2 {
+    padding-top: 7em;
+  }
+  #resume .card {
+    margin: 0.5em;
+    position: unset;
+  }
+
+  #projects .card {
+    position: unset;
+  }
 }
 
 /* mobile responsiveness -- medium */
@@ -411,12 +454,71 @@ i:active {
     background-color: red;
   }
 
+  #home {
+    background-size: contain;
+    height: 45vh;
+  }
+
+  #aboutImg {
+    height: 5em;
+    margin-top: 1em;
+  }
+
+  #about p {
+    width: 25em;
+  }
+
+  #infoRow {
+    width: 30em;
+  }
+  /* WIP, dropdown menus */
+  /* #resume h6,
+  h7,
+  ul,
+  p,
+  .jobRole {
+    display: none;
+  }
+
+  #summaryCard,
+  #educateCard,
+  #rightCard {
+    height: 5em;
+  } */
+
+  #educateCard,
+  #summaryCard,
+  #rightCard {
+    display: none;
+  }
+
+  #about li {
+    text-align: left;
+  }
+
   .wrapper {
     height: 18em;
   }
 
   #navBtn {
     display: flex;
+  }
+
+  #map {
+    height: 10em;
+    width: 20em;
+  }
+
+  #contact .col-5 {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  #mapDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
   }
 }
 

@@ -22,7 +22,8 @@
 
   <body>
     <!-- container for sidebar, contains navigation as  well as footer -->
-    <div class="wrapper col-2">
+    <div class="wrapper col-2">   
+
       <sidebar id="sideNav">
         <img id="sideImg" src="./assets/IMG_0042.JPG" />
         <h1>Chris Kramer</h1>
@@ -67,14 +68,15 @@
         </footer>
       </sidebar>
     </div>
-    <!-- hamburger menu for smaller screen sizes -->
-    <div id="navBtn">
-      <a href="#" class="toggle-button">
+    <!-- hamburger menu for smaller screen sizes -->     
+      <nav id="navBtn" class="top-bar" data-topbar data-options="scrolltop:false">
+      <a href="#!" class="toggle-button">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </a>
-    </div>
+    </nav>
+
     <!-- home section, this is what user will see automatically when going to website -->
     <section id="home">
       <div class="col-10"></div>
@@ -102,7 +104,7 @@
                 Discipline</strong
               >.
             </p>
-            <div class="row">
+            <div class="row" id="infoRow">
               <li>
                 <strong>Birthday: </strong>
                 <span>March 27, 1988</span>
@@ -129,27 +131,32 @@
       </div>
     </section>
     <section id="resume">
-      <div class="col-xl-10 col-lg-12">
+      <div class="col-xl-10 col-12">
         <h2>Resume</h2>
         <div class="row">
-          <div class="col-5 offset-1">
+          <div class="col-xl-5 col-xs-12 offset-xs-0 col-10 offset-1">
             <div class="card" id="summaryCard">
               <div class="card-body">
                 <h5 class="card-title">Summary</h5>
+                <button class="learnMore">Learn More</button>
                 <h6>Chris Kramer</h6>
                 <p class="card-text">
-                  IT Professional with previous experience focused on customer
+                  <ul>
+                    <li>IT Professional with previous experience focused on customer
                   obsession , deep diving with attention to detail, and deadline
-                  management / continuous improvements. Seeking to enter the
+                  management / continuous improvements</li>
+                  <li>Seeking to enter the
                   Software Development field, applying the skills and knowledge
                   I have obtained to make an impact within client and server
-                  systems.
+                  systems</li>
+                  </ul>
                 </p>
               </div>
             </div>
             <div class="card" id="educateCard">
               <div class="card-body">
                 <h5 class="card-title">Education Background</h5>
+                <button class="learnMore">Learn More</button>
                 <h6>University of Kansas</h6>
                 <h7>March 2020 - August 2020</h7>
                 <p class="card-text">
@@ -177,51 +184,52 @@
               </div>
             </div>
           </div>
-          <div class="col-5">
+          <div class="col-xl-5 offset-xl-0 col-10 offset-1">
             <div class="card" id="rightCard">
               <div class="card-body">
                 <h5 class="card-title">Professional Experience</h5>
+                <button class="learnMore">Learn More</button>
                 <h6>HYPE Math</h6>
                 <h7>January 2021 - May 2021 (Part-Time, Remote)</h7>
                 <div class="jobRole">
                   Application Developer Intern (Front-End Lead)
                 </div>
                 <p class="card-text">
-                  Was tasked with leading the Front-End Development team to
-                  success on the launch of the HYPE Math Interactive Website.
-                  Main priorities were assigning tasks to team members,
-                  continuous updates and adjustments depending on sprint
-                  deadline, and producing a user friendly JavaScript application
-                  ranging from personal tasks as well as assisting team members
-                  tasks.
+                  <ul>
+                    <li>Tasked with leading the Front-End Development team to
+                  success on the launch of the HYPE Math Interactive Website.</li>
+                  <li>Main priorities were assigning tasks to team members,
+                  continuous updates and adjustments, and producing a user friendly JavaScript application</li>
+                  </ul>
                 </p>
                 <h6>Amazon Logistics</h6>
                 <h7>August 2017 - June 2020</h7>
                 <div class="jobRole">Shift Assistant (Full-Time)</div>
                 <p class="card-text">
-                  Managed inbound dock for receiving, trailer inspection, and
-                  material handling. Handles dock clerk tasks and material
-                  organization, fulfilling safety regulations at all times.
-                  Assisted in managing 200 associates in daily objectives –
+                  <ul>
+                    <li>Managed inbound dock for receiving, trailer inspection, and
+                  material handling</li>
+                  <li>Assisted in managing 200 associates in daily objectives –
                   included delivering daily feedback on performance, presenting
                   data to leadership team on areas of improvement and
-                  successes.Led shift in quality standards that applied to over
+                  success</li>
+                  <li>Led shift in quality standards that applied to over
                   2,000 employees. Constantly deep-dived data for what can be
-                  improved in teams, as well as walking senior leadership
-                  through processes and what can be run more efficiently.
+                  improved in teams.</li>
+                  </ul>
                 </p>
                 <h6>United States Army</h6>
                 <h7>October 2008 - January 2013 (Active Reserves)</h7>
                 <div class="jobRole">Combat Engineer</div>
                 <p class="card-text">
-                  Took part in combat operations that required situational
+                  <ul>
+                    <li>Took part in combat operations that required situational
                   awareness as well as constant adjustments to achieve team
-                  success. Constant communication with other team members to
-                  fulfill mission objectives. Responsible for route clearance
-                  operations. Tasks include locating explosive device wires for
-                  the safety of the convoy and country civilians. Daily
+                  success</li>
+                  <li>Daily
                   responsibilities in weapon and vehicle functionality as well
-                  as team building exercises and operation evaluation.
+                  as team building exercises and operation evaluation</li>
+                  </ul>
                 </p>
               </div>
             </div>
@@ -234,7 +242,7 @@
         <h2>PROJECTS</h2>
         <div class="row" id="projRow">
           <div
-            class="card col-xl-3 offset-xl-1 col-4 offset-0"
+            class="card col-xl-3 offset-xl-1 col-12 offset-0"
             style="width: 18rem"
           >
             <img src="./assets/insideOutside.JPG" class="card-img-top" />
@@ -255,7 +263,7 @@
               </button>
             </div>
           </div>
-          <div class="card col-xl-3 col-4" style="width: 18rem">
+          <div class="card col-xl-4 col-4" style="width: 18rem">
             <img src="./assets/hypeLogo.JPG" class="card-img-top" />
             <div class="card-body">
               <h5 class="card-title">HYPE Math</h5>
@@ -303,7 +311,7 @@
               src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbs_szD91Qs1Ry435HiAjPFOIdKApu1e0&callback=initMap"
             ></script>
           </div>
-          <div class="col-5">
+          <div class="col-5" id="mapDiv">
             <container id="contactInfo">
               <img src="./assets/kramerdev.JPG" />
               <h3>Chris Kramer</h3>
@@ -313,6 +321,8 @@
           </div>
         </div>
       </div>
+    </section>
+    <section>
     </section>
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
