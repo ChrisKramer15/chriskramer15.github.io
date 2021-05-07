@@ -3,6 +3,7 @@ body {
   margin: 0;
   background-color: #1f2429;
   color: #e7cec6;
+  font-family: "Nanum Myeongjo", serif;
 }
 
 h1 {
@@ -305,7 +306,7 @@ i:active {
 .toggle-button {
   position: absolute;
   top: 0.75rem;
-  right: 1rem;
+  left: 1rem;
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -386,9 +387,6 @@ i:active {
     width: 100%;
     height: 15em;
   }
-  .toggle-button .bar {
-    background-color: green;
-  }
   .toggle-button {
     display: flex;
     position: fixed;
@@ -418,8 +416,16 @@ i:active {
   .wrapper.active {
     display: flex;
   }
+  #about h2 {
+    padding-top: 8em;
+  }
+  #mobHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 0 !important;
+  }
 
-  #about h2,
   #resume h2,
   #projects h2 {
     padding-top: 7em;
@@ -434,33 +440,16 @@ i:active {
   }
 }
 
-/* mobile responsiveness -- medium */
-@media only screen and (max-width: 992px) {
-  .toggle-button .bar {
-    background-color: blue;
-  }
-}
-
-/* mobile responsiveness -- small */
-@media only screen and (max-width: 768px) {
-  .toggle-button .bar {
-    background-color: purple;
-  }
-}
-
 /* mobile responsiveness -- X-Small and below */
 @media only screen and (max-width: 600px) {
-  .toggle-button .bar {
-    background-color: red;
-  }
-
   #home {
     background-size: contain;
-    height: 45vh;
+    height: 40vh;
+    width: 75vh;
   }
 
   #aboutImg {
-    height: 5em;
+    height: 4em;
     margin-top: 1em;
   }
 
@@ -521,136 +510,3 @@ i:active {
     align-items: baseline;
   }
 }
-
-/* #mobResume {
-  display: none;
-} */
-
-/* responsive design */
-/* .toggle-button {
-  position: absolute;
-  top: 0.75rem;
-  right: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
-}
-
-.toggle-button .bar {
-  height: 3px;
-  width: 100%;
-  background-color: white;
-  border-radius: 10px;
-} */
-
-/* 1400 breakpoint responsive */
-/* @media (max-width: 1455px) {
-  li {
-    margin: 0;
-  }
-
-  footer {
-    display: none;
-  }
-
-  .wrapper {
-    height: 75vh;
-  }
-
-  .container {
-    width: 85%;
-  }
-
-  .row {
-    flex-wrap: nowrap;
-  }
-
-  .col-6 {
-    width: 100%;
-  }
-  #sideNav h1 {
-    display: none;
-  }
-
-  #resume .row {
-    display: none;
-  }
-
-  #mobResume {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #contactInfo img {
-    width: 50%;
-  }
-
-  #map {
-    height: 15em;
-    width: 20em;
-  }
-
-  #aboutImg {
-    height: 10em;
-    margin-left: 5em;
-  }
-
-  #socialLinks {
-    padding-top: 1em;
-  }
-
-}
-/* 750 breakpoint */
-/*@media (max-width: 750px) {
-  nav ul {
-    flex-direction: column;
-    width: 100%;
-    margin-top: 0;
-  }
-
-  body {
-    width: 100vh;
-  }
-
-  #sideNav img {
-    display: none;
-  }
-
-  #sideNav li {
-    margin: 0;
-    text-align: center;
-  }
-
-  #home {
-    display: none;
-    height: 70vh;
-    background-size: contain;
-    width: 160vh;
-  }
-
-   #mobHeader {
-    display: flex;
-    justify-content: center;
-    color: #31899b;
-    font-size: 3em;
-  }
-
-   .wrapper.active {
-    display: flex;
-  }
-
-  .toggle-button {
-    display: flex;
-    left: 55rem;
-  }
-
-  .wrapper {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 30vh;
-  }
-}  */
